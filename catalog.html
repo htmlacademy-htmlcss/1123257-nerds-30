@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- todo-- доделать фавиконки и манифест -->
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
           <!-- <p>Nёrds</p> -->
-          <img src="https://via.placeholder.com/160x65" alt="https://via.placeholder.com/160x65" class="logo">
+          <img src="img/00_head_footer/nerds-logo.svg" width="160" height="65" alt="https://via.placeholder.com/160x65" class="logo">
         </a>
         <ul>
           <li><a href="index.html">Студия</a></li>
@@ -17,7 +19,7 @@
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a href="blank.html"><img src="img/00_head_footer/cart-icon.svg" alt="картинка-ссылка корзина"> Корзина</a>
       </nav>
     </header>
     <main>
@@ -28,10 +30,14 @@
           <fieldset>
             <legend>Стоимость:</legend>
             <input type="range" name="cost-range" min="0" max="15000" value="1200" step="100">
-            <p>От
-              <input type="text" name="cost-range-min" value="0">
-              До
-              <input type="text" name="cost-range-max" value="15000">
+            <p>
+              <label>
+                От <input type="text" name="cost-range-min" value="0">
+              </label>
+              <label>
+                До <input type="text" name="cost-range-max" value="15000">
+              </label>
+              
             </p>
           </fieldset>
           <fieldset>
@@ -87,71 +93,84 @@
             <li>По цене</li>
             <li>По типу</li>
             <li>По названию</li>
-            <li>Порядок сортировки</li>
+            <li><button type="button" aria-label="Сортировка по возрастанию"></button> Порядок сортировки</li> <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
+            <li><button type="button"></button> Порядок сортировки</li> <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
           </ul>
         
           <ul>
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="sedona">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
-              <section>
-                <h2>В корзину</h2>
-                <p>Sedona</p>
+              <img src="img/02/browser-active.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-sedona.png" width="358" height="578" alt="sedona">
+                  
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">Sedona</a>
                 <p>Информационный сайт<br> для туристов</p>
-                <button type="submit">9 900 ₽</button>
-              </section>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
+
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="pink">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
+              <img src="img/02/browser.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-pink.png" width="358" height="578" alt="pink">
+                 
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">Pink app</a>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
+
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="borodinski">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
+              <img src="img/02/browser.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-barbershop.png" width="358" height="578" alt="borodinski">
+
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">Barbershop</a>
+                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
+
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="mishka">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
+              <img src="img/02/browser.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-mishka.png" width="358" height="578" alt="mishka">
+              
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">Mishka</a>
+                <p>Интернет-магазин <br> вязаных игрушек</p>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
+
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="aplus">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
+              <img src="img/02/browser.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-aplus.png" width="358" height="578" alt="aplus">
+
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">A plus</a>
+                <p>Лендинг курсов повышения  <br> квалификации</p>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
+
             <li>
-              <a href="blank.html">
-                <!-- <p> -->
-                  <img src="https://via.placeholder.com/360x40" alt="browser">
-                  <img src="https://via.placeholder.com/359x578" alt="kvast">
-                  <!-- <h3></h3> -->
-                <!-- </p> -->
-              </a>
+              <img src="img/02/browser.png" width="360" height="40" alt="browser">
+              <img src="img/02/img-kvast.png" width="358" height="578" alt="kvast">
+              
+              <div>
+                <!-- <h2>В корзину</h2> -->
+                <a href="#">Кваст</a>
+                <p>Промо-сайт производителя <br> крафтового кваса</p>
+                <button type="button">9 900 ₽</button>
+              </div>
             </li>
           </ul>
+
           <ul>
             <li><a>1</a></li>
             <li><a href="#">2</a></li>
@@ -162,6 +181,7 @@
       </section>
     </main>
     <footer>
+        <img src="img/00_head_footer/map.jpg" width="1440" height="416" alt="карта">
               <!-- будет карта как фон или интерактивная -->
         <section>
           <h2>Наш адрес</h2>
@@ -172,19 +192,19 @@
         </section>
         <section>
           <h2>Мы здесь</h2>
-          <img src="https://via.placeholder.com/231x190" alt="https://via.placeholder.com/231x190">
+          <img src="img/00_head_footer/map-marker.png" width="231" height="190" alt="местоположение на карте">
         </section>
         <section>
           <h2>Мы в сети</h2>
-          <a href="#">vk</a>
-          <a href="#">fb</a>
-          <a href="#">insta</a>
+          <a href="#"> <img src="img/00_head_footer/social_link_circle.svg" alt="контур"><img src="img/00_head_footer/vk-icon.png" alt="вконтакте"> vk</a>
+          <a href="#"> <img src="img/00_head_footer/social_link_circle.svg" alt="контур"><img src="img/00_head_footer/fb-icon.png" alt="фейсбук"> fb</a>
+          <a href="#"> <img src="img/00_head_footer/social_link_circle.svg" alt="контур"><img src="img/00_head_footer/insta-icon.png" alt="инстаграм"> insta</a>
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       
     </footer>
-    <section>
+    <!-- <section>
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name">Ваше имя:</label>
@@ -198,6 +218,6 @@
         <button type="submit">Отправить</button>
       </form>
       <button type="button">Закрыть</button>
-    </section>
+    </section> -->
   </body>
 </html>
