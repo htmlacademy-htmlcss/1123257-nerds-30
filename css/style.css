@@ -102,12 +102,12 @@ img {
   font-size: 55px;
   line-height: 55px;
 } */
-.container-head {
+/* .container-head {
   color: var(--basic-txt-black);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-}
+} */
 
 .services-item-head {
   color: var(--basic-txt-black);
@@ -167,7 +167,6 @@ img {
 /*!--Main navigation--*/
 
 .main-header {
-  font: var(--font-f-roboto);
   width: 500px;
   font-style: normal;
   /* font-size: 16px; */
@@ -220,7 +219,6 @@ img {
 
 /*!--"about-us"---*/
 .about-us .slogan {
-  font: var(--font-f-roboto);
   color: var(--basic-txt-black);
   font-weight: 500;
   font-size: 45px;
@@ -284,9 +282,7 @@ img {
   height: 590px;
 }
 .modal label {
-  font: var(--font-f-roboto);
   font-weight: 700;
-  font-size: 16px;
   line-height: 18px;
 }
 .modal input {
