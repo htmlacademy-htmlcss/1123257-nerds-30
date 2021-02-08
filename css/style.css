@@ -303,158 +303,44 @@ img {
 /*!-filter-form---filter-form-range-*/
 .filter-form-range {
   background-color: var(--basic-header-bground);
-  width: 260px;
-  height: 80px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 145px;
-}
-.cost {
-  margin-top: 50px;
-  width: 80px;
-  height: 38px;
-}
-.filter-form-radio {
-  /* background-color: var(--basic-header-bground); */
-  width: 260px;
-  height: 120px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-.filter-form-radio input {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 40%;
-}
-.filter-form-radio input:hover {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  /* opacity: 40%; */
-}
-.filter-form-radio input:disabled {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 10%;
-}
-.filter-form-checkbox {
-  /* background-color: var(--basic-header-bground); */
-  width: 260px;
-  height: 180px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 10px;
 }
 
-.filter-form-checkbox input {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 40%;
-}
-.filter-form-checkbox input:hover {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  /* opacity: 40%; */
-}
-.filter-form-checkbox input:disabled {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 10%;
-}
-
-/* .filter-form .button{
-  text-transform: uppercase;
-  width: 260px;
-  height: 50px;
-  background-color:var(--basic-header-bground);
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-}
-.filter-form .button:hover{
-
-  background-color:var(--basic-gray_btn-bground-hover);
-  border: var(--basic-gray_btn-bground-hover) 1px solid;
-  border-radius: 3px;
-}
-.filter-form .button:active{
-  opacity: 30%;
-  background-color:var(--basic-gray_btn-bground-active);
-  border: var(--basic-gray_btn-bground-active) 1px solid;
-  border-radius: 3px;
-} */
-
-/*!--selectd--*/
+/*!--selected--*/
 .selected-item {
   width: 360px;
-  height: 618px;
 }
-.selected-list div {
-  width: 360px;
-  height: 231px;
-  border: #d7373b 1px solid; /*для пробы.. чтоб понять*/
-  /* clear: both; */
-}
+
 .selected-list a {
   color: var(--basic-txt-black);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30;
+  /* line-height: 30px; */
 }
 
-/* .selected-list button{
-  color: var(--basic-txt-white);
-  text-transform: uppercase;
-  width: 259px;
-  height: 50px;
-  border: var(--basic-red_btn-bground) 1px solid;
-  border-radius: 3px;
-  background-color:var(--basic-red_btn-bground);
-}
-.selected-list button:hover{
-  background-color: var(--basic-red_btn-bground-hover);
-}
-.selected-list button:active{
-  background-color: var(--basic-red_btn-bground-active);
-} */
-.selected-list-counter li:nth-child(1) {
-  color: var(--basic-txt-black);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  /* background-color: var(--basic-header-bground); */
-  border: #dbdbdb 3px solid;
-}
-.selected-list-counter li:nth-child(2),
-.selected-list-counter li:nth-child(3) {
-  color: var(--basic-txt-black);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  background-color: var(--basic-header-bground);
-  border: var(--basic-header-bground) 3px solid;
-}
 
-.selected-list-counter li:last-child {
-  color: var(--basic-txt-black);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  width: 260px;
-  height: 50px;
-  background-color: var(--basic-header-bground);
-  border: var(--basic-header-bground) 3px solid;
-}
+/*!-----selected-list-counter pagination---------*/
 .selected-list-counter a {
   color: #000000;
+}
+
+.pagination-item{
+  color: var(--basic-txt-black);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--basic-header-bground);
+  border: var(--basic-header-bground) 3px solid;
+}
+.pagination-item:hover{
+  background-color: var(--basic-gray_btn-bground-hover);
+  border: var(--basic-header-bground) 3px solid;
+}
+.pagination-item:active {
+  background-color: var(--basic-gray_btn-bground-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.pagination .current-item {
+  background-color: white;
+  border: #dbdbdb 3px solid;
 }
