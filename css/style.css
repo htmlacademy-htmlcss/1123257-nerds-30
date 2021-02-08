@@ -334,10 +334,11 @@ img {
 }
 .pagination-item:hover{
   background-color: var(--basic-gray_btn-bground-hover);
-  border: var(--basic-header-bground) 3px solid;
+  border: var(--basic-gray_btn-bground-hover) 3px solid;
 }
 .pagination-item:active {
   background-color: var(--basic-gray_btn-bground-active);
+  border: var(--basic-gray_btn-bground-active) 3px solid;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .pagination .current-item {
