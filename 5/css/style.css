@@ -55,6 +55,10 @@
 
   --basic-gray_pagination_current_border: #dbdbdb;
 
+  --basic-black_pagination_box_shadow: rgba(0, 1, 1, 0.1);
+
+  --basic-gray_modal_input_border: #d7dcde;
+
 
   --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
@@ -177,10 +181,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-txt-black);
 }
-/*todo-- узнать у Павла, как менять цвет svg*/
-.main-header-logo > img {
-  fill: #a6a6a6;
-}
+
 /*!---site-navigation--*/
 .nav-link {
   color: var(--basic-txt-black);
@@ -291,13 +292,13 @@ img {
 .modal input {
   width: 360px;
   height: 50px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--basic-gray_modal_input_border);
   border-radius: 3px;
 }
 .modal textarea {
   width: 760px;
   height: 118px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--basic-gray_modal_input_border);
   border-radius: 3px;
 }
 
@@ -339,7 +340,7 @@ img {
   /* background-color: var(--basic-header-bground); */
   /* color: var(--basic-text-btn-active); */
   color: var(--basic-txt-white);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-black_pagination_box_shadow);
   background-color: var(--basic-red_btn-bground-active);
   border: none;
 }
@@ -370,9 +371,6 @@ img {
 
 
 /*!-----selected-list-counter pagination---------*/
-.selected-list-counter a {
-  color: #000000;
-}
 
 .pagination-item{
   color: var(--basic-txt-black);
@@ -389,7 +387,7 @@ img {
 .pagination-item:active {
   background-color: var(--basic-gray_btn-bground-active);
   border: var(--basic-gray_btn-bground-active) 3px solid;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px  var(--basic-black_pagination_box_shadow);
 }
 .pagination .current-item {
   background-color: var(--basic-txt-white);
