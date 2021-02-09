@@ -97,15 +97,21 @@
 
       <p>Сортировать:</p>
       <ul class="sorting-list">
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
         <li>
-          <button class="button-ascending" type="button" aria-label="Сортировка по возрастанию"></button>
-          Порядок сортировки
+          <a href="#"  class="sorting-item">По цене</a>
+        </li>
+        <li>
+          <a href="#"  class="sorting-item">По типу</a>
+        </li>
+        <li>
+          <a href="#"  class="sorting-item">По названию</a>
+        </li>
+        <li>
+          <a class="sorting-item button-ascending" href="#">Порядок сортировки</a>
         </li>
         <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
-        <li><button class="button-descending"  type="button"></button> Порядок сортировки</li>
+        <li>
+          <a class="sorting-item button-descending"  href="#">Порядок сортировки</a> </li>
         <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
       </ul>
 
@@ -114,9 +120,9 @@
           <img src="img/browser-active.png" width="360" height="40" alt="browser">
           <img src="img/img-sedona.png" width="358" height="578" alt="sedona">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">Sedona</a>
+            <a class="selected-item-popup-site-name" href="#">Sedona</a>
             <p>
               Информационный сайт<br>
               для туристов
@@ -129,9 +135,9 @@
           <img src="img/browser.png" width="360" height="40" alt="browser">
           <img src="img/img-pink.png" width="358" height="578" alt="pink">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">Pink app</a>
+            <a class="selected-item-popup-site-name" href="#">Pink app</a>
             <p>
               Продуктовый лендинг<br>
               приложения для iOS и Android
@@ -144,9 +150,9 @@
           <img src="img/browser.png" width="360" height="40" alt="browser">
           <img src="img/img-barbershop.png" width="358" height="578" alt="borodinski">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">Barbershop</a>
+            <a class="selected-item-popup-site-name" href="#">Barbershop</a>
             <p>
               Сайт салона красоты.<br>
               Для мужчин, да.
@@ -159,9 +165,9 @@
           <img src="img/browser.png" width="360" height="40" alt="browser">
           <img src="img/img-mishka.png" width="358" height="578" alt="mishka">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">Mishka</a>
+            <a class="selected-item-popup-site-name" href="#">Mishka</a>
             <p>
               Интернет-магазин <br>
               вязаных игрушек
@@ -174,9 +180,9 @@
           <img src="img/browser.png" width="360" height="40" alt="browser">
           <img src="img/img-aplus.png" width="358" height="578" alt="aplus">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">A plus</a>
+            <a class="selected-item-popup-site-name" href="#">A plus</a>
             <p>
               Лендинг курсов повышения <br>
               квалификации
@@ -189,9 +195,9 @@
           <img src="img/browser.png" width="360" height="40" alt="browser">
           <img src="img/img-kvast.png" width="358" height="578" alt="kvast">
 
-          <div>
+          <div class="selected-item-popup">
             <!-- <h2>В корзину</h2> -->
-            <a href="#">Кваст</a>
+            <a class="selected-item-popup-site-name" href="#">Кваст</a>
             <p>
               Промо-сайт производителя <br>
               крафтового кваса
@@ -202,10 +208,10 @@
       </ul>
 
       <ul class="selected-list-counter pagination">
-        <li class="pagination-item current-item"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Следующая</a></li>
+        <li><a class="pagination-item current-item">1</a></li>
+        <li><a class="pagination-item" href="#">2</a></li>
+        <li><a class="pagination-item" href="#">3</a></li>
+        <li><a class="pagination-item" href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
@@ -218,7 +224,7 @@
         191186, Санкт-Петербург, <br>
         ул. Б. Конюшенная, д. 19/8
       </p>
-      <p>тел. <a class="button contacts-phone" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+      <p>тел. <a class="contacts-phone" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
       <a class="button write" href="#">Напишите нам</a>
     </section>
     <section class="footer-geolocation">

@@ -53,6 +53,9 @@
   --basic-gray_btn-bground-hover: #dfdfdf;
   --basic-gray_btn-bground-active: #d5d5d5;
 
+  --basic-gray_pagination_current_border: #dbdbdb;
+
+
   --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
 /*!--- Global --*/
@@ -304,18 +307,65 @@ img {
 .filter-form-range {
   background-color: var(--basic-header-bground);
 }
+.filter-form .button{
+  color: var(--basic-txt-black);
+}
+
 
 /*!--selected--*/
+.sorting-item{
+  color: var(--basic-txt-black);
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+.sorting-item:hover{
+  opacity: 0.6;
+}
+.sorting-item:active{
+  opacity: 1;
+}
+
 .selected-item {
   width: 360px;
 }
 
-.selected-list a {
+.selected-item-popup{
+  background-color: var(--basic-header-bground);
+}
+
+
+.selected-item-popup .button:active{
+  /* background-color: var(--basic-header-bground); */
+  /* color: var(--basic-text-btn-active); */
+  color: var(--basic-txt-white);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--basic-red_btn-bground-active);
+  border: none;
+}
+
+
+
+/* .selected-list a {
   color: var(--basic-txt-black);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 30px; */
+  line-height: 30px;
+} */
+.selected-item-popup-site-name{
+  color: var(--basic-txt-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.selected-item-popup-site-name:hover{
+  color: var(--basic-red_btn-bground);
+}
+.selected-item-popup-site-name:active{
+  color: var(--basic-txt-black);
+  opacity: 0.3;
 }
 
 
@@ -334,13 +384,14 @@ img {
 }
 .pagination-item:hover{
   background-color: var(--basic-gray_btn-bground-hover);
-  border: var(--basic-header-bground) 3px solid;
+  border: var(--basic-gray_btn-bground-hover) 3px solid;
 }
 .pagination-item:active {
   background-color: var(--basic-gray_btn-bground-active);
+  border: var(--basic-gray_btn-bground-active) 3px solid;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .pagination .current-item {
-  background-color: white;
-  border: #dbdbdb 3px solid;
+  background-color: var(--basic-txt-white);
+  border: var(--basic-gray_pagination_current_border) 3px solid;
 }
