@@ -53,6 +53,13 @@
   --basic-gray_btn-bground-hover: #dfdfdf;
   --basic-gray_btn-bground-active: #d5d5d5;
 
+  --basic-gray_pagination_current_border: #dbdbdb;
+
+  --basic-black_pagination_box_shadow: rgba(0, 1, 1, 0.1);
+
+  --basic-gray_modal_input_border: #d7dcde;
+
+
   --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
 /*!--- Global --*/
@@ -102,12 +109,12 @@ img {
   font-size: 55px;
   line-height: 55px;
 } */
-.container-head {
+/* .container-head {
   color: var(--basic-txt-black);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-}
+} */
 
 .services-item-head {
   color: var(--basic-txt-black);
@@ -167,7 +174,6 @@ img {
 /*!--Main navigation--*/
 
 .main-header {
-  font: var(--font-f-roboto);
   width: 500px;
   font-style: normal;
   /* font-size: 16px; */
@@ -175,10 +181,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-txt-black);
 }
-/*todo-- узнать у Павла, как менять цвет svg*/
-.main-header-logo > img {
-  fill: #a6a6a6;
-}
+
 /*!---site-navigation--*/
 .nav-link {
   color: var(--basic-txt-black);
@@ -220,7 +223,6 @@ img {
 
 /*!--"about-us"---*/
 .about-us .slogan {
-  font: var(--font-f-roboto);
   color: var(--basic-txt-black);
   font-weight: 500;
   font-size: 45px;
@@ -284,21 +286,19 @@ img {
   height: 590px;
 }
 .modal label {
-  font: var(--font-f-roboto);
   font-weight: 700;
-  font-size: 16px;
   line-height: 18px;
 }
 .modal input {
   width: 360px;
   height: 50px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--basic-gray_modal_input_border);
   border-radius: 3px;
 }
 .modal textarea {
   width: 760px;
   height: 118px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--basic-gray_modal_input_border);
   border-radius: 3px;
 }
 
@@ -307,158 +307,89 @@ img {
 /*!-filter-form---filter-form-range-*/
 .filter-form-range {
   background-color: var(--basic-header-bground);
-  width: 260px;
-  height: 80px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 145px;
 }
-.cost {
-  margin-top: 50px;
-  width: 80px;
-  height: 38px;
-}
-.filter-form-radio {
-  /* background-color: var(--basic-header-bground); */
-  width: 260px;
-  height: 120px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-.filter-form-radio input {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 40%;
-}
-.filter-form-radio input:hover {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  /* opacity: 40%; */
-}
-.filter-form-radio input:disabled {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 10%;
-}
-.filter-form-checkbox {
-  /* background-color: var(--basic-header-bground); */
-  width: 260px;
-  height: 180px;
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-  margin-bottom: 10px;
+.filter-form .button{
+  color: var(--basic-txt-black);
 }
 
-.filter-form-checkbox input {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 40%;
+
+/*!--selected--*/
+.sorting-item{
+  color: var(--basic-txt-black);
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
 }
-.filter-form-checkbox input:hover {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  /* opacity: 40%; */
+.sorting-item:hover{
+  opacity: 0.6;
 }
-.filter-form-checkbox input:disabled {
-  color: #4d4d4d;
-  width: 25px;
-  height: 25px;
-  opacity: 10%;
+.sorting-item:active{
+  opacity: 1;
 }
 
-/* .filter-form .button{
-  text-transform: uppercase;
-  width: 260px;
-  height: 50px;
-  background-color:var(--basic-header-bground);
-  border: var(--basic-bground-color) 1px solid;
-  border-radius: 3px;
-}
-.filter-form .button:hover{
-
-  background-color:var(--basic-gray_btn-bground-hover);
-  border: var(--basic-gray_btn-bground-hover) 1px solid;
-  border-radius: 3px;
-}
-.filter-form .button:active{
-  opacity: 30%;
-  background-color:var(--basic-gray_btn-bground-active);
-  border: var(--basic-gray_btn-bground-active) 1px solid;
-  border-radius: 3px;
-} */
-
-/*!--selectd--*/
 .selected-item {
   width: 360px;
-  height: 618px;
 }
-.selected-list div {
-  width: 360px;
-  height: 231px;
-  border: #d7373b 1px solid; /*для пробы.. чтоб понять*/
-  /* clear: both; */
+
+.selected-item-popup{
+  background-color: var(--basic-header-bground);
 }
-.selected-list a {
+
+
+.selected-item-popup .button:active{
+  /* background-color: var(--basic-header-bground); */
+  /* color: var(--basic-text-btn-active); */
+  color: var(--basic-txt-white);
+  box-shadow: inset 0px 3px 0px var(--basic-black_pagination_box_shadow);
+  background-color: var(--basic-red_btn-bground-active);
+  border: none;
+}
+
+
+
+/* .selected-list a {
   color: var(--basic-txt-black);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30;
-}
-
-/* .selected-list button{
-  color: var(--basic-txt-white);
-  text-transform: uppercase;
-  width: 259px;
-  height: 50px;
-  border: var(--basic-red_btn-bground) 1px solid;
-  border-radius: 3px;
-  background-color:var(--basic-red_btn-bground);
-}
-.selected-list button:hover{
-  background-color: var(--basic-red_btn-bground-hover);
-}
-.selected-list button:active{
-  background-color: var(--basic-red_btn-bground-active);
+  line-height: 30px;
 } */
-.selected-list-counter li:nth-child(1) {
+.selected-item-popup-site-name{
   color: var(--basic-txt-black);
   text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  /* background-color: var(--basic-header-bground); */
-  border: #dbdbdb 3px solid;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }
-.selected-list-counter li:nth-child(2),
-.selected-list-counter li:nth-child(3) {
+.selected-item-popup-site-name:hover{
+  color: var(--basic-red_btn-bground);
+}
+.selected-item-popup-site-name:active{
   color: var(--basic-txt-black);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  background-color: var(--basic-header-bground);
-  border: var(--basic-header-bground) 3px solid;
+  opacity: 0.3;
 }
 
-.selected-list-counter li:last-child {
+
+/*!-----selected-list-counter pagination---------*/
+
+.pagination-item{
   color: var(--basic-txt-black);
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  width: 260px;
-  height: 50px;
   background-color: var(--basic-header-bground);
   border: var(--basic-header-bground) 3px solid;
 }
-.selected-list-counter a {
-  color: #000000;
+.pagination-item:hover{
+  background-color: var(--basic-gray_btn-bground-hover);
+  border: var(--basic-gray_btn-bground-hover) 3px solid;
+}
+.pagination-item:active {
+  background-color: var(--basic-gray_btn-bground-active);
+  border: var(--basic-gray_btn-bground-active) 3px solid;
+  box-shadow: inset 0px 3px 0px  var(--basic-black_pagination_box_shadow);
+}
+.pagination .current-item {
+  background-color: var(--basic-txt-white);
+  border: var(--basic-gray_pagination_current_border) 3px solid;
 }
