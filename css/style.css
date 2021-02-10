@@ -63,8 +63,15 @@
   --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
 /*!--- Global --*/
+.page{
+  height: 100%;
+}
+
+/*!---GRID---*/
+
 .page-body {
   min-width: 1160px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
   font-family: var(--font-f-roboto);
@@ -73,6 +80,11 @@
   font-weight: 400;
   color: var(--basic-txt-extra-dark);
   background-color: var(--basic-bground-color);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
+  align-content: start;
 }
 a {
   text-decoration: none;
@@ -85,10 +97,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* todo переделать на классы критерий Б13  */
-/* ul{
-  list-style: none;
-} */
+
 .site-navigation,
 .promo-list,
 .services-list,
@@ -174,12 +183,30 @@ img {
 /*!--Main navigation--*/
 
 .main-header {
-  width: 500px;
+  /* width: 500px; */
   font-style: normal;
   /* font-size: 16px; */
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-txt-black);
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+.main-navigation{
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  /* grid-column: 1/-1; */
+  outline: teal solid;
+}
+.main-header-logo{
+  outline: rosybrown solid;
+}
+.site-navigation{
+  outline: rgb(57, 40, 152) solid;
+}
+.cart{
+  outline: rgb(40, 152, 177) solid;
 }
 
 /*!---site-navigation--*/
@@ -192,6 +219,14 @@ img {
 .nav-link:active {
   color: var(--basic-txt-nav-active);
 }
+/*!---CONTAINER-----*/
+.container{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+}
+
 /*!---PROMO--*/
 .promo-slogan {
   color: var(--basic-txt-black);
@@ -202,11 +237,14 @@ img {
 /*todo-- потом удалить promo-list */
 .promo-list {
   /* background-color: gray; */
+  outline: hotpink solid;
+  padding: 0;
 }
 
 .promo-item {
   background-position: right;
   background-repeat: no-repeat;
+  outline: springgreen solid;
 }
 
 .item-first {
@@ -221,7 +259,38 @@ img {
 
 /*!--services--*/
 
+.services{
+  outline: steelblue solid;
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.services-list{
+  outline: steelblue solid;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+.services-item{
+  outline: tomato solid;
+  outline-offset: -5px;
+  margin: 0;
+}
+/* .services-item p{
+  outline: tomato solid;
+  outline-offset: -5px;
+  margin: 0 10px;
+} */
+
 /*!--"about-us"---*/
+.about-us{
+  outline: green solid;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
 .about-us .slogan {
   color: var(--basic-txt-black);
   font-weight: 500;
@@ -251,7 +320,49 @@ img {
   font-size: 45px;
   line-height: 64px;
 }
+
+/*!--PARTNERS---*/
+.partners-list{
+  outline: turquoise solid;
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
 /*!--"footer"---*/
+.main-footer{
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+}
+.footer-top{
+  height: 416px;
+  background-image: url(../img/map-geotag.jpg);
+  background-repeat: no-repeat;
+  outline: solid sandybrown;
+  outline-offset: -5px;
+}
+.footer-bottom{
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* justify-self:normal; */
+  outline: solid rgb(65, 10, 247);
+  outline-offset: -5px;
+}
+.footer-social .social-list{
+  outline: solid green;
+  outline-offset: -5px;
+  background-color: rgb(221, 135, 135);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-slogan{
+  outline: hotpink;
+  outline-offset: -105px;
+}
 .contacts-name {
   font-weight: 700;
   font-size: 18px;
@@ -268,13 +379,13 @@ img {
   height: 81px;
   border-radius: 45px; */
 }
-.footer-social .benefits {
+.footer-slogan .benefits {
   color: var(--basic-txt-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
 }
-.footer-social .discounts {
+.footer-slogan .discounts {
   color: var(--basic-txt-dark);
 
   line-height: 22px;
