@@ -353,8 +353,10 @@ img {
 }
 .footer-top{
   height: 416px;
-  background-image: url(../img/map-geotag.jpg);
-  background-repeat: no-repeat;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* background-image: url(../img/map-geotag.jpg); */
+  /* background-repeat: no-repeat; */
   outline: solid sandybrown;
   outline-offset: -5px;
 }
