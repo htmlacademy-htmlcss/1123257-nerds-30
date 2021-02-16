@@ -107,7 +107,7 @@ a {
   border-bottom: 2px solid var(--basic-txt-nav-hover);
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -348,17 +348,22 @@ img {
 .main-footer{
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
-  display: grid;
-  grid-template-rows: 1fr max-content;
+  position: relative;
+  /* display: grid;
+  grid-template-rows: 1fr max-content;*/
 }
 .footer-top{
   height: 416px;
   width: 100%;
   /* margin: 0 auto; */
   /* background-image: url(../img/map-geotag.jpg); */
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   outline: solid sandybrown;
   outline-offset: -5px;
+}
+.footer-top img{
+  height: 416px;
+  width: 100%;
 }
 .footer-contacts{
   width: 319px;
