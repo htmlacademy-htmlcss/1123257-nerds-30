@@ -107,7 +107,7 @@ a {
   border-bottom: 2px solid var(--basic-txt-nav-hover);
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -357,7 +357,7 @@ img {
   width: 100%;
   /* margin: 0 auto; */
   /* background-image: url(../img/map-geotag.jpg); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   outline: solid sandybrown;
   outline-offset: -5px;
 }
