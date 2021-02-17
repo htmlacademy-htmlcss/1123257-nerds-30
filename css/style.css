@@ -119,8 +119,8 @@ img {
 .social-list,
 .filter-form-radio-list,
 .filter-form-checkbox-list,
-.sorting-list,
-.selected-list,
+.sorting-list-ul,
+.selected-list-ul,
 .selected-list-counter {
   list-style: none;
 }
@@ -533,3 +533,61 @@ background: var(--basic-txt-white);
   background-color: var(--basic-txt-white);
   border: var(--basic-gray_pagination_current_border) 3px solid;
 }
+/*!!!-- добавил в каталоге по ГРИДАМ*/
+.container-data{
+  width:1160px;
+  margin: 0 auto;
+  padding: 0 ;
+  outline: rgb(0, 208, 255) solid;
+  display: grid;
+  grid-template-columns: min-content    1fr ;
+}
+.selected{
+  /* width: 758px; */
+  /* padding-left: 20px; */
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
+  outline: rgb(180, 70, 153) solid;
+  outline-offset: -5px;
+}
+.sorting-list{
+  /* grid-column: 1/-1; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+.selected-list{
+  padding: 0;
+  width: 100%;
+  /* grid-column-start: 1;
+  grid-column-end:3; */
+
+}
+
+.selected-list-ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* padding: 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+.selected-item{
+  /* margin-top: 20px; */
+  /* margin-left: 55px; */
+  outline: yellowgreen solid;
+  justify-content: center;
+}
+.container-head{
+  width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+/* .selected-list-counter{ */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* gap: 50px; */
+  /* justify-content: right; */
+/* } */
+/**---вроде здесь закончил добавлять по каталогу*/
