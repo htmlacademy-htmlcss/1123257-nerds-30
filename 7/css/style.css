@@ -543,23 +543,23 @@ background: var(--basic-txt-white);
   grid-template-columns: min-content    1fr ;
 }
 .selected{
-  width: 758px;
+  /* width: 758px; */
   /* padding-left: 20px; */
-  display: grid;
-  grid-template-columns: 50% 50%;
-  outline: steelblue solid;
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
+  outline: rgb(180, 70, 153) solid;
   outline-offset: -5px;
 }
 .sorting-list{
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-column: 1/-1; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
 }
 .selected-list{
   padding: 0;
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end:3;
+  /* grid-column-start: 1;
+  grid-column-end:3; */
 
 }
 
@@ -574,7 +574,7 @@ background: var(--basic-txt-white);
   justify-content: center;
 }
 .selected-item{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* margin-left: 55px; */
   outline: yellowgreen solid;
   justify-content: center;
@@ -584,10 +584,10 @@ background: var(--basic-txt-white);
   /* margin: 0 auto; */
   text-align: center;
 }
-.selected-list-counter{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 50px;
+/* .selected-list-counter{ */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* gap: 50px; */
   /* justify-content: right; */
-}
+/* } */
 /**---вроде здесь закончил добавлять по каталогу*/
