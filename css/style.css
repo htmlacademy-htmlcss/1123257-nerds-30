@@ -219,14 +219,21 @@ img {
 .site-navigation{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 202px;
-  margin-right: 246px;
+  width: 437px;
+  margin: 25px auto 0;
   padding: 0;
   outline: rgb(57, 40, 152) solid;
 }
+
+.site-navigation-item {
+  margin-right: 45px;
+}
+
+.site-navigation-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .cart{
-  margin-right: 25px;
   outline: rgb(40, 152, 177) solid;
 }
 .cart img{
@@ -376,6 +383,8 @@ img {
   width: 100%;
 }
 .footer-contacts{
+  position: absolute;
+  top: 55px;
   width: 319px;
   height: 308px;
   /* left: 140px;
@@ -433,6 +442,7 @@ background: var(--basic-txt-white);
 }
 /*!--"modal feedback"--*/
 .modal {
+  display: none;
   background-color: var(--basic-txt-white);
   width: 960px;
   height: 590px;
