@@ -202,7 +202,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-txt-black);
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   background-color: var(--basic-header-bground);
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
@@ -217,10 +217,27 @@ img {
   outline: rosybrown solid;
 }
 .site-navigation{
+  display: flex;
+  flex-wrap: wrap;
+  width: 437px;
+  margin: 25px auto 0;
+  padding: 0;
   outline: rgb(57, 40, 152) solid;
 }
+
+.site-navigation-item {
+  margin-right: 45px;
+}
+
+.site-navigation-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .cart{
   outline: rgb(40, 152, 177) solid;
+}
+.cart img{
+  margin-right: 25px;
 }
 
 /*!---site-navigation--*/
@@ -366,6 +383,8 @@ img {
   width: 100%;
 }
 .footer-contacts{
+  position: absolute;
+  top: 55px;
   width: 319px;
   height: 308px;
   /* left: 140px;
@@ -385,8 +404,10 @@ background: var(--basic-txt-white);
   outline: solid green;
   outline-offset: -5px;
   background-color: rgb(221, 135, 135);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
 }
 .footer-slogan{
   outline: hotpink;
@@ -421,6 +442,7 @@ background: var(--basic-txt-white);
 }
 /*!--"modal feedback"--*/
 .modal {
+  display: none;
   background-color: var(--basic-txt-white);
   width: 960px;
   height: 590px;
@@ -535,9 +557,9 @@ background: var(--basic-txt-white);
 }
 /*!!!-- добавил в каталоге по ГРИДАМ*/
 .container-data{
-  width:1160px;
+  /* width:1160px;
   margin: 0 auto;
-  padding: 0 ;
+  padding: 0 ; */
   outline: rgb(0, 208, 255) solid;
   display: grid;
   grid-template-columns: min-content    1fr ;
