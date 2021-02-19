@@ -563,13 +563,14 @@ background: var(--basic-txt-white);
 .container-data{
   outline: rgb(0, 208, 255) solid;
   display: grid;
-  grid-template-columns: min-content    1fr ;
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 140px;
 }
 .container-data .filter{
-  width: 260px;
+  /* width: 260px; */
   outline: rgb(0, 255, 38) solid;
-  display: grid;
-  grid-template-columns: min-content    1fr ;
+  /* display: grid;
+  grid-template-columns: min-content    1fr ; */
 }
 
 .selected{
@@ -581,7 +582,6 @@ background: var(--basic-txt-white);
   outline-offset: -5px;
 }
 .sorting-list{
-  grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -621,7 +621,6 @@ background: var(--basic-txt-white);
   text-align: center;
 }
 .selected-list-counter{
-  width: 443px;
   display: flex;
   justify-content: space-between;
 }
