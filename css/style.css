@@ -470,6 +470,12 @@ background: var(--basic-txt-white);
 .filter-form-range {
   background-color: var(--basic-header-bground);
 }
+.filter-form-radio-list,
+.filter-form-checkbox-list {
+  padding: 0;
+  margin: 0;
+}
+
 .filter-form .button{
   color: var(--basic-txt-black);
 }
@@ -499,8 +505,6 @@ background: var(--basic-txt-white);
 
 
 .selected-item-popup .button:active{
-  /* background-color: var(--basic-header-bground); */
-  /* color: var(--basic-text-btn-active); */
   color: var(--basic-txt-white);
   box-shadow: inset 0px 3px 0px var(--basic-black_pagination_box_shadow);
   background-color: var(--basic-red_btn-bground-active);
@@ -557,13 +561,18 @@ background: var(--basic-txt-white);
 }
 /*!!!-- добавил в каталоге по ГРИДАМ*/
 .container-data{
-  /* width:1160px;
-  margin: 0 auto;
-  padding: 0 ; */
   outline: rgb(0, 208, 255) solid;
   display: grid;
-  grid-template-columns: min-content    1fr ;
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 140px;
 }
+.container-data .filter{
+  /* width: 260px; */
+  outline: rgb(0, 255, 38) solid;
+  /* display: grid;
+  grid-template-columns: min-content    1fr ; */
+}
+
 .selected{
   /* width: 758px; */
   /* padding-left: 20px; */
@@ -573,10 +582,14 @@ background: var(--basic-txt-white);
   outline-offset: -5px;
 }
 .sorting-list{
-  /* grid-column: 1/-1; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+.sorting-list-ul{
+  display: flex;
+  justify-content: space-around;
+}
+
 .selected-list{
   padding: 0;
   width: 100%;
@@ -589,14 +602,15 @@ background: var(--basic-txt-white);
   margin: 0;
   padding: 0;
   width: 100%;
-  /* padding: 0; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: center;
 }
+
 .selected-item{
-  /* margin-top: 20px; */
+  width: 360px;
+  margin-top: 20px;
   /* margin-left: 55px; */
   outline: yellowgreen solid;
   justify-content: center;
@@ -606,10 +620,8 @@ background: var(--basic-txt-white);
   /* margin: 0 auto; */
   text-align: center;
 }
-/* .selected-list-counter{ */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-  /* gap: 50px; */
-  /* justify-content: right; */
-/* } */
+.selected-list-counter{
+  display: flex;
+  justify-content: space-between;
+}
 /**---вроде здесь закончил добавлять по каталогу*/
