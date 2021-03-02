@@ -347,13 +347,23 @@ img {
   margin-bottom: 15px;
 }
 .services-list{
+  position: relative;
+
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 99px;
-  padding-bottom: 80px;
-  border-bottom: 2px solid var(--basic-header-bground);
+  padding-bottom: 81px;
+  /* border-bottom: 2px solid var(--basic-header-bground); */
+}
+.services-list::after{
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  width: 1160px;
+  height: 2px;
+  background-color: var(--basic-header-bground);
 }
 .services-item{
   margin: 0;
