@@ -120,6 +120,7 @@ img {
 .filter-form-radio-list,
 .filter-form-checkbox-list,
 .sorting-list-ul,
+.sorting-list-UpDown,
 .selected-list-ul,
 .selected-list-counter {
   list-style: none;
@@ -776,14 +777,16 @@ img {
 /*!-КАТАЛОГ-*/
 
 /*!-filter-form---filter-form-range-*/
-/*!--ОТСЮДА--*/
 .container-head{
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin-top: 69px;
-  margin-bottom: 110px;
+  /* margin-top: 69px;
+  margin-bottom: 110px; */
+  padding-top: 69px;
+  padding-bottom: 110px;
+  margin: 0;
 }
 
 .filter-form{
@@ -794,7 +797,7 @@ img {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 32px;
 }
 
 .filter-form-range {
@@ -804,12 +807,16 @@ img {
 
 }
 
-.filter-form-range legend{
+
+.filter-form-range legend,
+.filter-form-radio legend,
+.filter-form-checkbox legend {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .range-controls {
@@ -862,6 +869,8 @@ img {
   font-size: 16px;
 }
 .cost-controls input{
+  /* box-sizing: border-box; */
+
   font-family: inherit;
   font-size: inherit;
 
@@ -881,16 +890,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  margin-top: 50px;
-}
-
-.filter-form-radio legend {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-top: 54px;
 }
 
 .filter-input-radio + label::before {
@@ -901,11 +901,20 @@ img {
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-off.svg);
-  /* margin-bottom: 15px; */
+  opacity: 0.4;
 }
+.filter-input-radio:hover + label:hover::before{
+  opacity: 1;
+}
+
 .filter-input-radio:checked + label::before {
   background-image: url(../img/radio-on.svg);
 }
+.filter-input-radio:disabled + label{
+  opacity: 0.1;
+}
+
+/*!---Ух--И ВСЁ РАВНО, ЧТО-ТО НЕ ТАК В ЗАБЛОКИРОВАННОЙ РАДИО---*/
 
 .filter-form-radio-list .filter-label-radio,
 .filter-form-checkbox-list .filter-label-checkbox{
@@ -918,7 +927,7 @@ img {
 .filter-form-checkbox-list {
   padding: 0;
   margin: 0;
-  width: 260px;
+  /* width: 260px; */
   /* height: 179px; */
 }
 .filter-form-radio-list label,
@@ -940,17 +949,6 @@ img {
   margin-top: 30px;
 }
 
-.filter-form-checkbox legend {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  /* margin-top: 30px; */
-  margin-bottom: 14px;
-}
-
-
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -958,14 +956,25 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
-  /* border: 2px solid #000000; */
+
   background-image: url(../img/checkbox-off.svg);
+  opacity: 0.4;
 }
 .filter-input-checkbox:checked + label::before {
   width: 25px;
+
   background-image: url(../img/checkbox-on.svg);
 }
 
+.filter-input-checkbox:hover + label:hover::before{
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label{
+  opacity: 0.1;
+}
+
+/*!---Ух--И ВСЁ РАВНО, ЧТО-ТО НЕ ТАК В ЗАБЛОКИРОВАННОМ ЧЕКБОКСЕ---*/
 
 .filter-form .button{
   color: var(--basic-txt-black);
@@ -975,6 +984,13 @@ img {
 
 
 /*!--selected--*/
+
+.sorting-list{
+  display: grid;
+  grid-template-columns: max-content 1fr 40px;
+  /* column-gap: 20px; */
+}
+
 
 .sorting-list p{
   display: flex;
@@ -988,13 +1004,35 @@ img {
 }
 
 .sorting-list-ul{
+  padding: 0;
   margin-top: 50px;
-  padding-left: 10px;
+  margin-left: 178px;
   width: 359px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end; /*!!!!!!!!!!!!!!!!!!!--*/
   text-transform: uppercase;
+}
+.sorting-list-ul li{
+  padding-left: 25px;
+}
+.sorting-item{
+  padding: 0;
+}
+
+
+.sorting-list-UpDown{
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sorting-list-UpDown .sorting-item-button{
+  padding-right: 0px;
 }
 
 /*!!--ДО СЮДА--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -1015,12 +1053,14 @@ img {
   width: 11px;
   height: 10px;
 }
-.sorting-item-button svg path:hover{
-  /* fill: #ff0000; */
+
+.sorting-item-button svg{
+  opacity: 0.2;
+}
+.sorting-item-button svg:hover{
   opacity: 0.6;
 }
-.sorting-item-button svg path:active{
-/* fill: #88ff00; */
+.sorting-item-button svg:active{
   opacity: 1;
 }
 
@@ -1071,7 +1111,7 @@ img {
 
   background-color: var(--basic-header-bground);
 
-  opacity: 1;
+  opacity: 0;
 }
 
 .selected-item-popup p {
@@ -1122,37 +1162,52 @@ img {
 
 
 /*!-----selected-list-counter pagination---------*/
+/* .pagination {
+  display: flex;
+} */
+.selected-list-counter{
+  padding: 0;
+  margin-top: 54px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: start;
+}
 
-.pagination-item{
+.pagination-item {
+  /* margin-right: 10px; */
+  margin-bottom: 10px;
+}
+.pagination-button{
   display: block;
   box-sizing: border-box;
-  min-width: 50px;
-  min-height: 50px;
+  /* width: 50px;
+  height: 50px; */
   color: var(--basic-txt-black);
   text-transform: uppercase;
   text-align: center;
+
   padding: 12px 18px 12px;
   margin-right: 11px;
-  /* vertical-align: middle; */
+
   background-color: var(--basic-header-bground);
   border: var(--basic-header-bground) 3px solid;
 }
-.selected-list-counter li:last-child{
-  width: 260px;
+.selected-list-counter .pagination-item:last-child{
+  width: 270px;
 
   margin-right: 0px;
 }
 
-.pagination-item:hover{
+.pagination-button:hover{
   background-color: var(--basic-gray_btn-bground-hover);
   border: var(--basic-gray_btn-bground-hover) 3px solid;
 }
-.pagination-item:active {
+.pagination-button:active {
   background-color: var(--basic-gray_btn-bground-active);
   border: var(--basic-gray_btn-bground-active) 3px solid;
   box-shadow: inset 0px 3px 0px  var(--basic-black_pagination_box_shadow);
 }
-.pagination .current-item {
+.pagination .active {
   background-color: var(--basic-txt-white);
   border: var(--basic-gray_pagination_current_border) 3px solid;
 }
@@ -1175,14 +1230,7 @@ img {
   outline: rgb(180, 70, 153) solid;
 }
 
-.sorting-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.sorting-list-ul{
-  display: flex;
-  justify-content: space-around;
-}
+
 
 .selected-list{
   padding: 0;
@@ -1213,12 +1261,7 @@ img {
   width: 100%;
   /* margin: 0 auto; */
   text-align: center;
+  background-color: var(--basic-header-bground);
 }
-.selected-list-counter{
-  padding: 0;
-  margin-top: 54px;
-  margin-bottom: 57px;
-  display: flex;
-  justify-content: start;
-}
+
 /**---вроде здесь закончил добавлять по каталогу*/
