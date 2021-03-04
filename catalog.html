@@ -10,6 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style-cat.css"> -->
 
 
 </head>
@@ -34,60 +35,87 @@
   <main class="">
     <h1 class="container-head ">Магазин готовых шаблонов</h1>
     <div class="container-data container">
-        <section class="filter">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
+
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-form-range">
             <legend>Стоимость:</legend>
-            <input class="range" type="range" name="cost-range" min="0" max="15000" value="1200" step="100">
-            <!-- <p> -->
-              <label>
-                От <input class="cost" type="text" name="cost-range-min" value="0">
-              </label>
-              <label>
-                До <input class="cost" type="text" name="cost-range-max" value="15000">
-              </label>
-            <!-- </p> -->
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                  width: 62%;
+                  margin-left: 6% ">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 6%;"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 62%;"></div>
+              </div>
+
+              <!-- !!-- ниже мой слайдер -->
+              <!-- <input class="range" type="range" name="cost-range" min="0" max="15000" value="1200" step="100"> -->
+
+              <!-- !!-- выше мой слайдер -->
+
+              <div class="cost-controls">
+                <label class="min-cost">
+                  От <input class="cost" type="number" name="cost-range-min" value="0">
+                </label>
+                <label class="max-cost">
+                  До <input class="cost" type="number" name="cost-range-max" value="15000">
+                </label>
+              </div>
+            </div>
           </fieldset>
+
           <fieldset class="filter-form-radio">
             <legend>Сетка:</legend>
             <ul class="filter-form-radio-list">
               <li>
-                <input type="radio" name="grid-type" value="adaptive" id="grid-type-adaptive" checked>
-                <label for="grid-type-adaptive">Адаптивная</label>
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive"
+                  id="grid-type-adaptive" checked>
+                <label class="filter-label-radio" for="grid-type-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="grid-type" value="fixed" id="grid-type-fixed">
-                <label for="grid-type-fixed">Фиксированная</label>
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="fixed"
+                  id="grid-type-fixed">
+                <label class="filter-label-radio" for="grid-type-fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="grid-type" value="rubber" id="grid-type-rubber">
-                <label for="grid-type-rubber">Резиновая</label>
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="rubber"
+                  id="grid-type-rubber">
+                <label class="filter-label-radio" for="grid-type-rubber">Резиновая</label>
               </li>
             </ul>
+
           </fieldset>
           <fieldset class="filter-form-checkbox">
             <legend>Особенности:</legend>
             <ul class="filter-form-checkbox-list">
               <li>
-                <input type="checkbox" name="slider" id="features-slider" checked>
-                <label for="features-slider">Слайдер</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="features-slider"
+                  checked>
+                <label class="filter-label-checkbox" for="features-slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="advantages" id="features-advantages">
-                <label for="features-advantages">Блок преимуществ</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages"
+                  id="features-advantages">
+                <label class="filter-label-checkbox" for="features-advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="features-news" checked>
-                <label for="features-news">Новости</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="features-news"
+                  checked>
+                <label class="filter-label-checkbox" for="features-news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" name="gallery" id="features-gallery">
-                <label for="features-gallery">Галерея</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery"
+                  id="features-gallery">
+                <label class="filter-label-checkbox" for="features-gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" name="basket" id="features-basket">
-                <label for="features-basket">Корзина</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="features-basket">
+                <label class="filter-label-checkbox" for="features-basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -98,34 +126,42 @@
       <div class="selected">
         <!-- <h2 class="visually-hidden">Отобранные шаблоны</h2> -->
         <section class="sorting-list">
-        <h2 class="visually-hidden">Отобранные шаблоны</h2>
+          <h2 class="visually-hidden">Отобранные шаблоны</h2>
 
           <p>Сортировать:</p>
-        <ul class="sorting-list-ul">
-          <li>
-            <a href="#"  class="sorting-item">По цене</a>
-          </li>
-          <li>
-            <a href="#"  class="sorting-item">По типу</a>
-          </li>
-          <li>
-            <a href="#"  class="sorting-item">По названию</a>
-          </li>
-          <li>
-            <a class="sorting-item button-ascending" href="#"><b> A</b></a>
-          </li>
-          <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
-          <li>
-            <a class="sorting-item button-descending"  href="#"><b> V</b></a> </li>
-          <!-- todo-- задать вопрос Павлу как сделать кнопки сортировки -->
-        </ul>
+          <ul class="sorting-list-ul">
+            <li>
+              <a href="#" class="sorting-item item-active">По цене</a>
+            </li>
+            <li>
+              <a href="#" class="sorting-item">По типу</a>
+            </li>
+            <li>
+              <a href="#" class="sorting-item">По названию</a>
+            </li>
+          </ul>
+            <!--que-- задать вопрос Павлу как сделать кнопки сортировки -->
+          <ul class="sorting-list-UpDown">
+            <li>
+              <a class="sorting-item-button button-active" href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
+                </svg></a>
+            </li>
+            <li>
+              <a class="sorting-item-button" href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
+                </svg></a> </li>
+            <!-- que-- задать вопрос Павлу как сделать кнопки сортировки -->
+          </ul>
         </section>
 
         <section class="selected-list">
           <h2 class="visually-hidden">Шаблоны сайтов</h2>
           <ul class="selected-list-ul">
             <li class="selected-item">
-              <img src="img/browser-active.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-sedona.png" width="358" height="578" alt="sedona">
 
               <div class="selected-item-popup">
@@ -140,7 +176,7 @@
             </li>
 
             <li class="selected-item">
-              <img src="img/browser.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-pink.png" width="358" height="578" alt="pink">
 
               <div class="selected-item-popup">
@@ -155,7 +191,7 @@
             </li>
 
             <li class="selected-item">
-              <img src="img/browser.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-barbershop.png" width="358" height="578" alt="borodinski">
 
               <div class="selected-item-popup">
@@ -170,7 +206,7 @@
             </li>
 
             <li class="selected-item">
-              <img src="img/browser.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-mishka.png" width="358" height="578" alt="mishka">
 
               <div class="selected-item-popup">
@@ -185,7 +221,7 @@
             </li>
 
             <li class="selected-item">
-              <img src="img/browser.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-aplus.png" width="358" height="578" alt="aplus">
 
               <div class="selected-item-popup">
@@ -200,7 +236,7 @@
             </li>
 
             <li class="selected-item">
-              <img src="img/browser.png" width="360" height="40" alt="browser">
+              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-kvast.png" width="358" height="578" alt="kvast">
 
               <div class="selected-item-popup">
@@ -216,10 +252,10 @@
           </ul>
         </section>
         <ul class="selected-list-counter pagination">
-          <li><a class="pagination-item current-item">1</a></li>
-          <li><a class="pagination-item" href="#">2</a></li>
-          <li><a class="pagination-item" href="#">3</a></li>
-          <li><a class="pagination-item" href="#">Следующая</a></li>
+          <li class="pagination-item"><a class="pagination-button active">1</a></li>
+          <li class="pagination-item"><a class="pagination-button" href="#">2</a></li>
+          <li class="pagination-item"><a class="pagination-button" href="#">3</a></li>
+          <li class="pagination-item"><a class="pagination-button" href="#">Следующая</a></li>
         </ul>
       </div>
 
