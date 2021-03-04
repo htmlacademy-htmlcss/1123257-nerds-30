@@ -124,9 +124,9 @@ a {
   bottom: -20px;
   left: 2px;
   width: 73px;
-  /* height: 2px; */
+  height: 2px;
   background-color: var(--basic-txt-nav-hover);
-  border-bottom: 2px solid var(--basic-txt-nav-hover);
+  /* border-bottom: 2px solid var(--basic-txt-nav-hover); */
 }
 
 
