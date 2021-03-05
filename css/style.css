@@ -21,7 +21,7 @@
   font-weight: 500;
   font-style: normal;
 }
-/*!--кастомные--цвет--*/
+/*--кастомные--цвет--*/
 :root {
   --basic-txt-black: #000000;
   --basic-txt-extra-dark: #283136;
@@ -64,7 +64,7 @@
 
   --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
-/*!--- Global --*/
+/*--- Global --*/
 .page{
   height: 100%;
 }
@@ -92,7 +92,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-/*!---GRID---*/
+/*---GRID---*/
 
 .page-body {
   min-width: 1160px;
@@ -212,7 +212,7 @@ img {
   background-color: var(--basic-gray_btn-bground-active);
 }
 
-/*!--Main navigation--*/
+/*--Main navigation--*/
 
 .main-header {
   font-style: normal;
@@ -260,7 +260,7 @@ img {
   margin-right: 20px;
 }
 
-/*!---site-navigation--*/
+/*---site-navigation--*/
 .nav-link {
   color: var(--basic-txt-black);
 }
@@ -270,14 +270,14 @@ img {
 .nav-link:active {
   color: var(--basic-txt-nav-active);
 }
-/*!---CONTAINER-----*/
+/*---CONTAINER-----*/
 .container{
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/*!---PROMO--*/
+/*---PROMO--*/
 .promo{
   background-color: var(--basic-header-bground);
 }
@@ -293,7 +293,6 @@ img {
 
 .promo-item {
   padding: 68px 0 78px 0;
-   /*?--вот как здесь с высотой элемента и бэкрграунд размерами*/
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -354,9 +353,8 @@ img {
   background-position: center;
 }
 
-/****--РАЗОБРАТЬСЯ С КАРТИНКАМИ, МОЖЕТ УБРАТЬ КАРТИКИ ИЗ ХТМЛ*/
 
-/*!--services--*/
+/*--services--*/
 
 .services{
   padding: 0;
@@ -403,7 +401,7 @@ img {
 }
 
 
-/*!--"about-us"---*/
+/*--"about-us"---*/
 .about-us{
   margin-bottom: 40px;
   display: grid;
@@ -450,7 +448,7 @@ img {
   background-color: var(--basic-txt-nav-hover);
 }
 
-/*!--"rules"---*/
+/*--"rules"---*/
 .rules{
   padding-top: 22px;
   padding-left: 22px;
@@ -499,7 +497,7 @@ img {
   line-height: 18px;
 }
 
-/*!--PARTNERS--NEW---*/
+/*--PARTNERS--NEW---*/
 
 .partners {
   position: relative;
@@ -568,29 +566,48 @@ img {
   opacity: 0.1;
 }
 
-/*!----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 
-/*!--"footer"---*/
+/*--"footer"---*/
 .main-footer{
   position: relative;
   /* display: grid;
   grid-template-rows: 1fr max-content;*/
 }
 .footer-top{
+  position: relative;
+
   height: 416px;
   width: 100%;
   /* margin: 0 auto; */
+
+  background-color: var(--basic-header-bground);
   /* background-image: url(../img/map-geotag.jpg); */
   /* background-repeat: no-repeat; */
 }
 .footer-top img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
   height: 416px;
   width: 100%;
+}
+.footer-top iframe{
+  position: relative;
+  height: 416px;
+  width: 100%;
+
+  z-index: 1;
+  border: 0;
 }
 .footer-contacts{
   box-sizing: border-box;
   position: absolute;
   top: 57px;
+  z-index: 2;
+
   width: 319px;
   background: var(--basic-txt-white);
   padding: 47px 50px 49px 50px;
@@ -679,7 +696,6 @@ img {
   color: var(--basic-txt-dark);
 
 }
-/* todo сделать модалку */
 
 .modal {
   position: fixed;
@@ -775,9 +791,9 @@ img {
   opacity: 0.1;
 }
 
-/*!-КАТАЛОГ-*/
+/*-КАТАЛОГ-*/
 
-/*!-filter-form---filter-form-range-*/
+/*-filter-form---filter-form-range-*/
 .container-head{
   font-style: normal;
   font-weight: 500;
@@ -883,7 +899,7 @@ img {
   background: var(--basic-header-bground);
 }
 
-/*!--Радиокнопки фильтра--*/
+/*--Радиокнопки фильтра--*/
 
 .filter-form-radio{
   margin: 0;
@@ -916,7 +932,6 @@ img {
   opacity: 0.1;
 }
 
-/*!---Ух--И ВСЁ РАВНО, ЧТО-ТО НЕ ТАК В ЗАБЛОКИРОВАННОЙ РАДИО---*/
 
 .filter-form-radio-list .filter-label-radio,
 .filter-form-checkbox-list .filter-label-checkbox{
@@ -941,7 +956,7 @@ img {
 }
 
 
-/*!--Чекбоксы фильтра--*/
+/*--Чекбоксы фильтра--*/
 .filter-form-checkbox{
   margin: 0;
   padding: 0;
@@ -978,7 +993,6 @@ img {
   opacity: 0.1;
 }
 
-/*!---Ух--И ВСЁ РАВНО, ЧТО-ТО НЕ ТАК В ЗАБЛОКИРОВАННОМ ЧЕКБОКСЕ---*/
 
 .filter-form .button{
   color: var(--basic-txt-black);
@@ -987,7 +1001,7 @@ img {
 }
 
 
-/*!--selected--*/
+/*--selected--*/
 
 .sorting-list{
   display: grid;
@@ -1055,7 +1069,6 @@ img {
 }
 
 .sorting-item-button{
-  display: inline-block;
   width: 11px;
   height: 10px;
 }
@@ -1085,6 +1098,7 @@ img {
   width: 360px;
   margin-top: 30px;
   justify-content: center;
+  object-fit: contain;
 }
 .selected-item:hover{
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
@@ -1096,7 +1110,6 @@ img {
 
 }
 
-/* note focus-within */
 
 .selected-item::before {
   content: "";
@@ -1161,13 +1174,7 @@ img {
 
 
 
-/* .selected-list a {
-  color: var(--basic-txt-black);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-} */
+
 .selected-item-popup-site-name{
   color: var(--basic-txt-black);
   text-transform: uppercase;
@@ -1184,7 +1191,7 @@ img {
 }
 
 
-/*!-----selected-list-counter pagination---------*/
+/*-----selected-list-counter pagination---------*/
 /* .pagination {
   display: flex;
 } */
@@ -1237,7 +1244,10 @@ img {
   /* border: var(--basic-gray_pagination_current_border) 3px solid; */
   /* border-radius: 3px; */
 }
-/*!!!-- добавил в каталоге по ГРИДАМ*/
+
+/*-------------------------------------------------------------*/
+
+/*-- добавил в каталоге по ГРИДАМ*/
 .container-data{
   display: grid;
   grid-template-columns: 260px 1fr ;
@@ -1277,4 +1287,3 @@ img {
   background-color: var(--basic-header-bground);
 }
 
-/**---вроде здесь закончил добавлять по каталогу*/
