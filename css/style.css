@@ -57,10 +57,18 @@
   --basic-yellow_btn-bground-hover: #eab534;
   --basic-yellow_btn-bground-active: #e5a722;
 
-  --basic-cart-border: rgba(0, 0, 0, 0.1);
-
   --basic-gray_btn-bground-hover: #dfdfdf;
   --basic-gray_btn-bground-active: #d5d5d5;
+
+  --basic-box-shadow_btn: rgba(0, 1, 1, 0.1);
+  /* --basic-box-shadow_btn: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
+
+  --basic-filter_drop-shadow: rgba(0, 0, 0, 0.25);
+  /* --basic-filter_drop-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25); */
+
+  --basic-cart-border: rgba(0, 0, 0, 0.1);
+
+
 
   --basic-gray_pagination_current_border: #dbdbdb;
 
@@ -191,8 +199,12 @@ img {
 }
 .button:active {
   color: var(--basic-text-btn-active);
-  -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  /* -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
+  -webkit-box-shadow: inset 0px 3px 0px var(--basic-box-shadow_btn);
+          box-shadow: inset 0px 3px 0px var(--basic-box-shadow_btn);
+
+
   background-color: var(--basic-red_btn-bground-active);
 }
 
@@ -1218,8 +1230,8 @@ img {
 }
 .selected-item:hover,
 .selected-item:focus {
-  -webkit-filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 6px 15px  var(--basic-filter_drop-shadow));
+          filter: drop-shadow(0px 6px 15px  var(--basic-filter_drop-shadow));
 }
 
 .selected-item:hover .selected-item-popup,
