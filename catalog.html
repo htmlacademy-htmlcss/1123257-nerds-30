@@ -10,7 +10,6 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style-cat.css"> -->
 
 
 </head>
@@ -41,7 +40,7 @@
 
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-form-range">
-            <legend tabindex="0" aria-label="Выбор желаемой Стоимости сайта">Стоимость:</legend>
+            <legend aria-label="Выбор желаемой стоимости сайта">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -50,8 +49,8 @@
                   margin-left: 6% ">
                   </div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 6%;"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 62%;"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 6%;" aria-label="Левая ручка ползунка изменения цены"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 62%;" aria-label="Правая ручка ползунка изменения цены"></div>
               </div>
 
               <!-- !!-- ниже мой слайдер -->
@@ -71,7 +70,7 @@
           </fieldset>
 
           <fieldset class="filter-form-radio">
-            <legend tabindex="0" aria-label="Выбор желаемой Сетки сайта">Сетка:</legend>
+            <legend aria-label="Выбор желаемой сетки сайта">Сетка:</legend>
             <ul class="filter-form-radio-list">
               <li>
                 <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive"
@@ -92,7 +91,7 @@
 
           </fieldset>
           <fieldset class="filter-form-checkbox">
-            <legend tabindex="0" aria-label="Выбор желаемой Особенности сайта">Особенности:</legend>
+            <legend aria-label="Выбор желаемой особенности сайта">Особенности:</legend>
             <ul class="filter-form-checkbox-list">
               <li>
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="features-slider"
@@ -129,7 +128,7 @@
         <section class="sorting-list">
           <h2 class="visually-hidden">Отобранные шаблоны</h2>
 
-          <p tabindex="0">Сортировать:</p>
+          <p>Сортировать:</p>
           <ul class="sorting-list-ul">
             <li>
               <a href="#" class="sorting-item item-active">По цене</a>
@@ -144,13 +143,13 @@
             <!--que-- задать вопрос Павлу как сделать кнопки сортировки -->
           <ul class="sorting-list-UpDown">
             <li>
-              <a class="sorting-item-button button-active" href="#" aria-label="сортировка по убыванию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+              <a class="sorting-item-button button-active" href="#" aria-label="Сортировка по убыванию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
                 </svg></a>
             </li>
             <li>
-              <a class="sorting-item-button" href="#" aria-label="сортировка по возрастанию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+              <a class="sorting-item-button" href="#" aria-label="Сортировка по возрастанию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
                 </svg></a> </li>
@@ -163,91 +162,93 @@
           <ul class="selected-list-ul">
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-sedona.png" width="358" height="578" alt="шаблон сайта sedona" tabindex="0">
+              <img src="img/img-sedona.png" width="358" height="578" alt="шаблон сайта sedona">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать дополнительные сведения">Sedona</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Sedona</a>
                 <p>
                   Информационный сайт<br>
                   для туристов
                 </p>
-                <button class="button" type="button" aria-label="добавить в корзину">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-pink.png" width="358" height="578" alt="шаблон сайта pink" tabindex="0">
+              <img src="img/img-pink.png" width="358" height="578" alt="Шаблон сайта pink">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">Pink app</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Pink
+                  app</a>
                 <p>
                   Продуктовый лендинг<br>
                   приложения для iOS и Android
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-barbershop.png" width="358" height="578" alt="шаблон сайта borodinski" tabindex="0">
+              <img src="img/img-barbershop.png" width="358" height="578" alt="шаблон сайта borodinski">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">Barbershop</a>
+                <a class="selected-item-popup-site-name" href="#"
+                  aria-label="Узнать больше о шаблоне сайта">Barbershop</a>
                 <p>
                   Сайт салона красоты.<br>
                   Для мужчин, да.
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-mishka.png" width="358" height="578" alt="шаблон сайта mishka" tabindex="0">
+              <img src="img/img-mishka.png" width="358" height="578" alt="шаблон сайта mishka">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">Mishka</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Mishka</a>
                 <p>
                   Интернет-магазин <br>
                   вязаных игрушек
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-aplus.png" width="358" height="578" alt="шаблон сайта aplus" tabindex="0">
+              <img src="img/img-aplus.png" width="358" height="578" alt="шаблон сайта aplus">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">A plus</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">A plus</a>
                 <p>
                   Лендинг курсов повышения <br>
                   квалификации
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-kvast.png" width="358" height="578" alt="шаблон сайта kvast" tabindex="0">
+              <img src="img/img-kvast.png" width="358" height="578" alt="шаблон сайта kvast">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">Кваст</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Кваст</a>
                 <p>
                   Промо-сайт производителя <br>
                   крафтового кваса
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="Купить шаблон сайта за 9 900 ₽">9 900 ₽</button>
               </div>
             </li>
           </ul>
@@ -281,9 +282,9 @@
     </div>
     <div class="footer-bottom container">
       <section class="footer-contacts">
-        <h2 class="visually-hidden" tabindex="0">Наш адрес</h2>
+        <h2 class="visually-hidden">Наш адрес</h2>
         <p class="contacts-name">Nёrds design studio</p>
-        <p class="contacts-address" tabindex="0">
+        <p class="contacts-address">
           191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8
         </p>
@@ -324,8 +325,8 @@
       </section>
       <section class="footer-slogan">
         <h2 class="visually-hidden">Слоган</h2>
-        <p class="benefits" tabindex="0">Давайте дружить, это выгодно!</p>
-        <p class="discounts" tabindex="0">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="benefits">Давайте дружить, это выгодно!</p>
+        <p class="discounts">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
 
