@@ -28,7 +28,8 @@
         <li class="site-navigation-item"><a class="nav-link current-page" href="#">Магазин</a></li>
         <li class="site-navigation-item"><a class="nav-link" href="#">Контакты</a></li>
       </ul>
-      <a class="nav-link cart" href="blank.html"><img src="img/icons/cart-icon.svg" alt="картинка-ссылка корзина">
+      <a class="nav-link cart" href="blank.html"><img src="img/icons/cart-icon.svg" width="15" height="15"
+          alt="картинка-ссылка">
         Корзина</a>
     </nav>
   </header>
@@ -40,7 +41,7 @@
 
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-form-range">
-            <legend>Стоимость:</legend>
+            <legend tabindex="0" aria-label="Выбор желаемой Стоимости сайта">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -70,7 +71,7 @@
           </fieldset>
 
           <fieldset class="filter-form-radio">
-            <legend>Сетка:</legend>
+            <legend tabindex="0" aria-label="Выбор желаемой Сетки сайта">Сетка:</legend>
             <ul class="filter-form-radio-list">
               <li>
                 <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive"
@@ -91,7 +92,7 @@
 
           </fieldset>
           <fieldset class="filter-form-checkbox">
-            <legend>Особенности:</legend>
+            <legend tabindex="0" aria-label="Выбор желаемой Особенности сайта">Особенности:</legend>
             <ul class="filter-form-checkbox-list">
               <li>
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="features-slider"
@@ -128,7 +129,7 @@
         <section class="sorting-list">
           <h2 class="visually-hidden">Отобранные шаблоны</h2>
 
-          <p>Сортировать:</p>
+          <p tabindex="0">Сортировать:</p>
           <ul class="sorting-list-ul">
             <li>
               <a href="#" class="sorting-item item-active">По цене</a>
@@ -143,13 +144,13 @@
             <!--que-- задать вопрос Павлу как сделать кнопки сортировки -->
           <ul class="sorting-list-UpDown">
             <li>
-              <a class="sorting-item-button button-active" href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+              <a class="sorting-item-button button-active" href="#" aria-label="сортировка по убыванию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
                 </svg></a>
             </li>
             <li>
-              <a class="sorting-item-button" href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+              <a class="sorting-item-button" href="#" aria-label="сортировка по возрастанию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
                 </svg></a> </li>
@@ -162,22 +163,22 @@
           <ul class="selected-list-ul">
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-sedona.png" width="358" height="578" alt="sedona">
+              <img src="img/img-sedona.png" width="358" height="578" alt="шаблон сайта sedona" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#">Sedona</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать дополнительные сведения">Sedona</a>
                 <p>
                   Информационный сайт<br>
                   для туристов
                 </p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button" type="button" aria-label="добавить в корзину">9 900 ₽</button>
               </div>
             </li>
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-pink.png" width="358" height="578" alt="pink">
+              <img src="img/img-pink.png" width="358" height="578" alt="шаблон сайта pink" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
@@ -192,7 +193,7 @@
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-barbershop.png" width="358" height="578" alt="borodinski">
+              <img src="img/img-barbershop.png" width="358" height="578" alt="шаблон сайта borodinski" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
@@ -207,7 +208,7 @@
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-mishka.png" width="358" height="578" alt="mishka">
+              <img src="img/img-mishka.png" width="358" height="578" alt="шаблон сайта mishka" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
@@ -222,7 +223,7 @@
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-aplus.png" width="358" height="578" alt="aplus">
+              <img src="img/img-aplus.png" width="358" height="578" alt="шаблон сайта aplus" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
@@ -237,7 +238,7 @@
 
             <li class="selected-item">
               <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
-              <img src="img/img-kvast.png" width="358" height="578" alt="kvast">
+              <img src="img/img-kvast.png" width="358" height="578" alt="шаблон сайта kvast" tabindex="0">
 
               <div class="selected-item-popup">
                 <!-- <h2>В корзину</h2> -->
@@ -269,13 +270,20 @@
     <div class="footer-top geolocation">
       <h2 class="visually-hidden">Мы здесь</h2>
 
-      <img src="img/map-geotag.jpg" width="1440" height="416" alt="карта">
+
+      <iframe class="map-yandex"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A74451f1abf43b821f2bdd577e958d63830ee9a5e52399f760a461dcfc58f8219&amp;source=constructor"
+        height="416" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+
+      <img src="img/map-geotag.jpg" width="1440" height="416"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербурга">
     </div>
     <div class="footer-bottom container">
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Наш адрес</h2>
+        <h2 class="visually-hidden" tabindex="0">Наш адрес</h2>
         <p class="contacts-name">Nёrds design studio</p>
-        <p class="contacts-address">
+        <p class="contacts-address" tabindex="0">
           191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8
         </p>
@@ -287,8 +295,8 @@
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">
-              <!-- <span>Вконтакте</span> -->
-              <svg width="27" height="16" viewBox="0 0 128 76">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg aria-hidden="true" focusable="false" width="27" height="16" viewBox="0 0 128 76">
                 <path
                   d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z"
                   fill="#fff" /></svg>
@@ -296,8 +304,8 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <!-- <span>Фейсбук</span> -->
-              <svg width="19" height="22" viewBox="0 0 10.15 21.74">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg aria-hidden="true" focusable="false" width="19" height="22" viewBox="0 0 10.15 21.74">
                 <path
                   d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
                   fill="#fff" /></svg>
@@ -305,8 +313,8 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <!-- <span>Инстаграм</span> -->
-              <svg width="20" height="20" viewBox="0 0 20 20">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
                 <path
                   d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
                   fill="#fff" /></svg>
@@ -316,8 +324,8 @@
       </section>
       <section class="footer-slogan">
         <h2 class="visually-hidden">Слоган</h2>
-        <p class="benefits">Давайте дружить, это выгодно!</p>
-        <p class="discounts">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="benefits" tabindex="0">Давайте дружить, это выгодно!</p>
+        <p class="discounts" tabindex="0">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
 
