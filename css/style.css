@@ -61,6 +61,8 @@
   --basic-gray_btn-bground-active: #d5d5d5;
 
   --basic-box-shadow_btn: rgba(0, 1, 1, 0.1);
+
+  --basic-box-shadow_popup: rgba(0, 0, 0, 0.7);
   /* --basic-box-shadow_btn: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
 
   --basic-filter_drop-shadow: rgba(0, 0, 0, 0.25);
@@ -76,8 +78,6 @@
 
   --basic-gray_modal_input_border: #d7dcde;
 
-
-  --font-f-roboto: "Roboto", "Arial", sans-serif;
 }
 /*--- Global --*/
 .page{
@@ -114,7 +114,8 @@ input[type="number"] {
   /* max-width: 1440px; */
   margin: 0 auto;
   padding: 0;
-  font-family: var(--font-f-roboto);
+  /* font-family: var(--font-f-roboto); */
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -748,8 +749,8 @@ img {
 }
 .social-button:active{
   background-color: var(--basic-red_btn-bground-active);
-  -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0px var(--basic-box-shadow_btn);
+          box-shadow: inset 0px 3px 0px var(--basic-box-shadow_btn);
 }
 .social-button:active svg{
   opacity: 0.3;
@@ -786,8 +787,8 @@ img {
   padding: 50px 100px 50px 100px;
 
   background-color: var(--basic-txt-white);
-  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 30px 50px var(--basic-box-shadow_popup);
+          box-shadow: 0 30px 50px var(--basic-box-shadow_popup);
 
   -webkit-transform: translateX(-50%);
 
