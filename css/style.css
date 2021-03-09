@@ -358,10 +358,19 @@ img {
 .item-first {
   background-image: url("../img/slide-first.png");
 }
+.item-first-show {
+  display: none;
+}
+
 .item-second {
   display: none;
   background-image: url("../img/slide-second.png");
 }
+.item-second-show {
+  display: block;
+  background-image: url("../img/slide-second.png");
+}
+
 .item-third {
   display: none;
   background-image: url("../img/slide-third.png");
@@ -386,7 +395,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.promo-pagination-item-link{
+.promo-pagination-item-link-first,
+.promo-pagination-item-link-second,
+.promo-pagination-item-link-third {
   display: block;
   width: 18px;
   height: 18px;
@@ -796,6 +807,12 @@ img {
 
           transform: translateX(-50%);
 }
+.modal-show {
+  display: block;
+  z-index: 3;
+}
+
+
 .modal h2{
   margin-top: 15px;
   margin-bottom: 35px;
@@ -1428,3 +1445,31 @@ img {
   text-align: center;
   background-color: var(--basic-header-bground);
 }
+
+/* Анимация Модального окна */
+
+/* ---Плавное опускание формы */
+
+@keyframes bounce {
+    0%   { transform: translateY(-2000px); }
+    70%  { transform: translateY(30px);    }
+    90%  { transform: translateY(-10px);   }
+    100% { transform: translateY(0);       }
+  }
+  .modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 2s;
+  }
+
+  /* -- Потряс форму своими умениями */
+
+  @keyframes shake {
+    0%, 100%                { transform: translateX(0);     }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px);  }
+  }
+  .modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+  }
