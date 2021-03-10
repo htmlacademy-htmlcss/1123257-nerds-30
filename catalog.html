@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/icons/vector-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -27,12 +27,10 @@
         <li class="site-navigation-item"><a class="nav-link current-page" href="#">Магазин</a></li>
         <li class="site-navigation-item"><a class="nav-link" href="#">Контакты</a></li>
       </ul>
-      <a class="nav-link cart" href="blank.html"><img src="img/icons/cart-icon.svg" width="15" height="15"
-          alt="картинка-ссылка">
-        Корзина</a>
+      <a class="nav-link cart" href="blank.html"><img src="img/icons/cart-icon.svg" width="15" height="15" alt="картинка-ссылка">Корзина</a>
     </nav>
   </header>
-  <main class="">
+  <main>
     <h1 class="container-head ">Магазин готовых шаблонов</h1>
     <div class="container-data container">
       <section class="filter">
@@ -44,19 +42,11 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="
-                  width: 62%;
-                  margin-left: 6% ">
-                  </div>
+                  <div class="bar" style="width: 62%; margin-left: 6%"></div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0" style="left: 6%;" aria-label="Левая ручка ползунка изменения цены"></div>
                 <div class="toggle toggle-max" tabindex="0" style="left: 62%;" aria-label="Правая ручка ползунка изменения цены"></div>
               </div>
-
-              <!-- !!-- ниже мой слайдер -->
-              <!-- <input class="range" type="range" name="cost-range" min="0" max="15000" value="1200" step="100"> -->
-
-              <!-- !!-- выше мой слайдер -->
 
               <div class="cost-controls">
                 <label class="min-cost">
@@ -73,18 +63,15 @@
             <legend aria-label="Выбор желаемой сетки сайта">Сетка:</legend>
             <ul class="filter-form-radio-list">
               <li>
-                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive"
-                  id="grid-type-adaptive" checked>
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive" id="grid-type-adaptive" checked>
                 <label class="filter-label-radio" for="grid-type-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="fixed"
-                  id="grid-type-fixed">
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="fixed" id="grid-type-fixed">
                 <label class="filter-label-radio" for="grid-type-fixed">Фиксированная</label>
               </li>
               <li>
-                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="rubber"
-                  id="grid-type-rubber">
+                <input class="filter-input-radio visually-hidden" type="radio" name="grid-type" value="rubber" id="grid-type-rubber">
                 <label class="filter-label-radio" for="grid-type-rubber">Резиновая</label>
               </li>
             </ul>
@@ -94,23 +81,19 @@
             <legend aria-label="Выбор желаемой особенности сайта">Особенности:</legend>
             <ul class="filter-form-checkbox-list">
               <li>
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="features-slider"
-                  checked>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="features-slider" checked>
                 <label class="filter-label-checkbox" for="features-slider">Слайдер</label>
               </li>
               <li>
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages"
-                  id="features-advantages">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="features-advantages">
                 <label class="filter-label-checkbox" for="features-advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="features-news"
-                  checked>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="features-news" checked>
                 <label class="filter-label-checkbox" for="features-news">Новости</label>
               </li>
               <li>
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery"
-                  id="features-gallery">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="features-gallery">
                 <label class="filter-label-checkbox" for="features-gallery">Галерея</label>
               </li>
               <li>
@@ -124,7 +107,6 @@
       </section>
 
       <div class="selected">
-        <!-- <h2 class="visually-hidden">Отобранные шаблоны</h2> -->
         <section class="sorting-list">
           <h2 class="visually-hidden">Отобранные шаблоны</h2>
 
@@ -140,20 +122,21 @@
               <a href="#" class="sorting-item">По названию</a>
             </li>
           </ul>
-            <!--que-- задать вопрос Павлу как сделать кнопки сортировки -->
           <ul class="sorting-list-UpDown">
             <li>
               <a class="sorting-item-button button-active" href="#" aria-label="Сортировка по убыванию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
-                </svg></a>
+                  <path d="M5.5 10L0 0H11" fill="#A6A6A6">
+                </svg>
+              </a>
             </li>
             <li>
               <a class="sorting-item-button" href="#" aria-label="Сортировка по возрастанию"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
-                </svg></a> </li>
-            <!-- que-- задать вопрос Павлу как сделать кнопки сортировки -->
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6">
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
 
@@ -161,11 +144,9 @@
           <h2 class="visually-hidden">Шаблоны сайтов</h2>
           <ul class="selected-list-ul">
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-sedona.png" width="358" height="578" alt="шаблон сайта sedona">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
                 <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Sedona</a>
                 <p>
                   Информационный сайт<br>
@@ -176,13 +157,10 @@
             </li>
 
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-pink.png" width="358" height="578" alt="Шаблон сайта pink">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Pink
-                  app</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Pink app</a>
                 <p>
                   Продуктовый лендинг<br>
                   приложения для iOS и Android
@@ -192,13 +170,10 @@
             </li>
 
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-barbershop.png" width="358" height="578" alt="шаблон сайта borodinski">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
-                <a class="selected-item-popup-site-name" href="#"
-                  aria-label="Узнать больше о шаблоне сайта">Barbershop</a>
+                <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Barbershop</a>
                 <p>
                   Сайт салона красоты.<br>
                   Для мужчин, да.
@@ -208,11 +183,9 @@
             </li>
 
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-mishka.png" width="358" height="578" alt="шаблон сайта mishka">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
                 <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Mishka</a>
                 <p>
                   Интернет-магазин <br>
@@ -223,11 +196,9 @@
             </li>
 
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-aplus.png" width="358" height="578" alt="шаблон сайта aplus">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
                 <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">A plus</a>
                 <p>
                   Лендинг курсов повышения <br>
@@ -238,11 +209,9 @@
             </li>
 
             <li class="selected-item">
-              <!-- <img src="img/browser.png" width="360" height="40" alt="browser"> -->
               <img src="img/img-kvast.png" width="358" height="578" alt="шаблон сайта kvast">
 
               <div class="selected-item-popup">
-                <!-- <h2>В корзину</h2> -->
                 <a class="selected-item-popup-site-name" href="#" aria-label="Узнать больше о шаблоне сайта">Кваст</a>
                 <p>
                   Промо-сайт производителя <br>
@@ -260,26 +229,22 @@
           <li class="pagination-item"><a class="pagination-button" href="#">Следующая</a></li>
         </ul>
       </div>
-
-
     </div>
-
 
   </main>
   <footer class="main-footer">
-    <!-- будет карта как фон или интерактивная -->
     <div class="footer-top geolocation">
       <h2 class="visually-hidden">Мы здесь</h2>
-
 
       <iframe class="map-yandex"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A74451f1abf43b821f2bdd577e958d63830ee9a5e52399f760a461dcfc58f8219&amp;source=constructor"
         height="416" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
 
-      <img src="img/map-geotag.jpg" width="1440" height="416"
-        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербурга">
+      <img src="img/map-geotag.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербурга">
     </div>
+
     <div class="footer-bottom container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
@@ -289,7 +254,7 @@
           ул. Б. Конюшенная, д. 19/8
         </p>
         <p>тел. <a class="contacts-phone" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
-        <a class="button modal-link" href="#">Напишите нам</a>
+        <a class="button modal-link" href="form.html">Напишите нам</a>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в сети</h2>
@@ -300,7 +265,8 @@
               <svg aria-hidden="true" focusable="false" width="27" height="16" viewBox="0 0 128 76">
                 <path
                   d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z"
-                  fill="#fff" /></svg>
+                  fill="#fff">
+              </svg>
             </a>
           </li>
           <li>
@@ -309,7 +275,8 @@
               <svg aria-hidden="true" focusable="false" width="19" height="22" viewBox="0 0 10.15 21.74">
                 <path
                   d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
-                  fill="#fff" /></svg>
+                  fill="#fff">
+              </svg>
             </a>
           </li>
           <li>
@@ -318,7 +285,8 @@
               <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
                 <path
                   d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
-                  fill="#fff" /></svg>
+                  fill="#fff">
+              </svg>
             </a>
           </li>
         </ul>
@@ -332,30 +300,30 @@
 
   </footer>
 
-<section class="modal feedback">
-  <h2>Напишите нам</h2>
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+  <section class="modal feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-    <p class="feedback-form-item">
-      <label for="name">Ваше имя:</label>
-      <input class="feedback-name" type="text" name="your_name" id="name" placeholder="Имя Фамилия">
-    </p>
+      <p class="feedback-form-item">
+        <label for="name">Ваше имя:</label>
+        <input class="feedback-name" type="text" name="your_name" id="name" placeholder="Имя Фамилия">
+      </p>
 
-    <p class="feedback-form-item">
-      <label for="email">Ваш email:</label>
-      <input class="feedback-email" type="email" name="your_email" id="email" placeholder="email@example.com">
-    </p>
+      <p class="feedback-form-item">
+        <label for="email">Ваш email:</label>
+        <input class="feedback-email" type="email" name="your_email" id="email" placeholder="email@example.com">
+      </p>
 
-    <p class="feedback-form-item-text">
-      <label for="text">Текст письма:</label>
-      <textarea class="feedback-message" name="message_text" id="text" cols="50" rows="20"
-        placeholder="В свободной форме"></textarea>
-    </p>
+      <p class="feedback-form-item-text">
+        <label for="text">Текст письма:</label>
+        <textarea class="feedback-message" name="message_text" id="text" cols="50" rows="20"
+          placeholder="В свободной форме"></textarea>
+      </p>
 
-    <button class="button" type="submit">Отправить</button>
-  </form>
-  <button class="button-close" type="button" aria-label="Закрыть форму обратной связи" title="Закрыть"></button>
-</section>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="button-close" type="button" aria-label="Закрыть форму обратной связи" title="Закрыть"></button>
+  </section>
 
   <script src="js/script.min.js"></script>
 </body>
