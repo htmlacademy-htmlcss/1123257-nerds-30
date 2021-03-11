@@ -110,6 +110,8 @@
 
 .cost {
   -moz-appearance: textfield;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 /*---GRID---*/
@@ -168,7 +170,7 @@ img {
 .filter-form-radio-list,
 .filter-form-checkbox-list,
 .sorting-list-ul,
-.sorting-list-updown,
+.sorting-list-up-down,
 .selected-list-ul,
 .selected-list-counter {
   list-style: none;
@@ -432,6 +434,7 @@ img {
   background-color: var(--basic-txt-white);
   border-radius: 50%;
   cursor: pointer;
+  border: none;
 }
 
 .promo-pagination-item .current {
@@ -1141,7 +1144,7 @@ img {
 .filter-form-checkbox-list .filter-label-checkbox {
   margin-left: 36px;
   margin-bottom: 20px;
-  margin-top: 2px;
+  margin-top: 3px;
   line-height: 20px;
 }
 
@@ -1208,7 +1211,7 @@ img {
 
 .filter-form .button {
   color: var(--basic-txt-black);
-  margin-top: 32px;
+  margin-top: 29px;
   padding: 16px 90px 15px 88px;
 }
 
@@ -1265,7 +1268,7 @@ img {
   padding-left: 25px;
 }
 
-.sorting-list-updown {
+.sorting-list-up-down {
   margin: 0;
   margin-top: 55px;
   padding: 0;
@@ -1280,7 +1283,7 @@ img {
           align-items: flex-start;
 }
 
-.sorting-list-updown .sorting-item-button {
+.sorting-list-up-down .sorting-item-button {
   padding-right: 0px;
 }
 
@@ -1440,9 +1443,8 @@ img {
 
 .selected-list-counter {
   padding: 0;
-  margin-top: 54px;
+  margin-top: 52px;
   margin-bottom: 49px;
-  margin-left: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1456,8 +1458,6 @@ img {
 .pagination-item {
   margin-right: 11px;
   margin-bottom: 10px;
-  padding-bottom: 3px;
-  padding-top: 3px;
 }
 
 .pagination-button {
@@ -1473,7 +1473,7 @@ img {
   font-size: 16px;
   line-height: 18px;
 
-  padding: 13px 21px 13px 20px;
+  padding: 17px 21px 15px 20px;
 
   background-color: var(--basic-header-bground);
   border-radius: 3px;
